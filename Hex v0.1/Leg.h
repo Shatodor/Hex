@@ -166,7 +166,7 @@ public:
     
     CoxaAngle = rawCoxaAngle - addCoxaAngle; 
   
-    float x = xyDist*cos(addCoxaAngle); //xyDist projection on leg plane
+    float x = xyDist * cos(addCoxaAngle); //xyDist projection on leg plane
     
     //algolist.manual.ru/maths/geom/intersect/circlecircle2d.php aproach 2
 
@@ -186,7 +186,7 @@ public:
     } 
 
     float a = (sqr(FemurLenght) - sqr(TibaLenght) + sqr(d)) / (2*d);
-    float h = sqrt(sqr(FemurLenght)-sqr(a)); 
+    float h = sqrt(sqr(FemurLenght) - sqr(a)); 
      
     float x2 = FemurOffsetX + (a/d) * (x - FemurOffsetX); 
     float z2 = FemurOffsetZ + (a/d) * (dest.z - FemurOffsetZ); 
